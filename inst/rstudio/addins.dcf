@@ -1,0 +1,9 @@
+Name: Analyze reactivity
+Description: Show reactivity dependency network for the current Shiny app
+Binding: reactflush_addin
+Interactive: false
+
+Name: Analyze reactivity focused on selection
+Description: Show reactivity dependency network for the current Shiny app
+Binding: reactflush_focus_addin
+Interactive: false
