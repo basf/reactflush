@@ -1,4 +1,4 @@
-# reactflush <a href='https://github.com/svdwoude/reactflush'><img src='inst/reactflush.png' align="right" height="139" /></a>
+# reactflush <a href='https://github.com/svdwoude/reactflush'><img src='inst/media/reactflush.png' align="right" height="139" /></a>
 
 [![Project Status: Active - The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
 
