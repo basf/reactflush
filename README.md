@@ -1,7 +1,6 @@
 # reactflush <a href='https://github.com/svdwoude/reactflush'><img src='inst/reactflush.png' align="right" height="139" /></a>
 
 [![Project Status: Active - The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
-[![build](https://gitlab.roqs.basf.net/RawatV/reactflush/badges/master/pipeline.svg)](https://gitlab.roqs.basf.net/RawatV/reactflush/commits/master)
 
 <br>
 
@@ -30,35 +29,10 @@ are reactive bottlenecks or how changing one element will affect other reactive 
 - capable of identifying and processing source statements within your code
 - identify all common elements: `input`, `reactive`,  `reactiveValues`, `reactiveVal`, `eventReactive`, `callModule`, `observe`, `observeEvent`, `render*`
 
-![nodes](inst/media/reactflush_nodes.svg)
+![nodes](inst/media/reactflush_nodes.png)
 
-![nodes](inst/media/reactflush_edges.svg)
+![nodes](inst/media/reactflush_edges.png)
 
-
-
-```mermaid
-graph LR;
-n1(source);
-style n1 color: white, fill:none, fill-opacity:0.4, stroke:none, stroke-width:2px;
-n2(endpoint);
-style n2 fill:none, fill-opacity:0.4, stroke:none, stroke-width:2px;
-n3(source);
-style n3 color: white, fill:none, fill-opacity:0.4, stroke:none, stroke-width:2px;
-n4(endpoint);
-style n4 fill:none, fill-opacity:0.4, stroke:none, stroke-width:2px;
-n5(source);
-style n5 color: white, fill:none, fill-opacity:0.4, stroke:none, stroke-width:2px;
-n6(endpoint);
-style n6 fill:none, fill-opacity:0.4, stroke:none, stroke-width:2px;
-
-n1-->|connected|n2;
- linkStyle 0 stroke:black, stroke-width:1px, fill:none, stroke-dasharray:none;
-n3-->|isolated|n4;
- linkStyle 1 stroke:#999999, stroke-width:1px, fill:none, stroke-dasharray:10;
- n6-->|side effect|n5;
- linkStyle 2 stroke:black, stroke-width:1px, fill:none, stroke-dasharray:2;
-
-```
 
 ## Installation
 
@@ -76,7 +50,7 @@ dir <- fs::path(system.file("examples", package="shiny"), "07_widgets")
 reactflush(dir)
 ```
 
-![nodes](inst/media/reactflush_example_full.svg)
+![nodes](inst/media/reactflush_example_full.png)
 
 
 ### Focus on one element
@@ -90,15 +64,15 @@ element <- "output$view"
 reactflush(dir, focus = element)
 ```
 
-![nodes](inst/media/reactflush_example_focus.svg)
+![nodes](inst/media/reactflush_example_focus.png)
 
 
 ## Rstudio Addin
 
 ### Complete shiny app
-![rstudioa_addin_demo](inst/reactflush_rstudioaddin.gif)
+![rstudioa_addin_demo](inst/media/reactflush_rstudioaddin.gif)
 
 ### Focus on one element
-![rstudioa_addin_demo](inst/reactflush_rstudioaddin_focus.gif)
+![rstudioa_addin_demo](inst/media/reactflush_rstudioaddin_focus.gif)
 
 
