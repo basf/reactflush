@@ -15,7 +15,7 @@ and endpoints of your elements.
 and provides a visual overview of how all the reactive elements interact wiht one
 another.
 
-This should servers as a complementary tool for [reactlog](https://github.com/rstudio/reactlog)
+This package aims to be a complementary tool for [reactlog](https://github.com/rstudio/reactlog)
 which provides a visual debugger for shiny reactivity. The key difference is that 
 `reactflush` gives you an overview of your complete app based on your code instead
 of logging the reactive activity while using the app. This ensures a complete overview
