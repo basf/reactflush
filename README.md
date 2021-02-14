@@ -38,7 +38,7 @@ are reactive bottlenecks or how changing one element will affect other reactive 
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("svdwoude/reactflush")
+devtools::install_github("basf/reactflush")
 ```
 ## Usage
 
